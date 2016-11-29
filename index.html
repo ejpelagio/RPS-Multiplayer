@@ -3,6 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>RPS Multiplayer</title>
+        <!--Fontawesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- CSS CDN-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- jQuery CDN -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <!-- Game Logic -->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <div class="MainHeader">
+        
+            <h1>Multiplayer Rock, Papers and Scissors.</h1>
+
+        </div>
     </head>
     <body>
 
@@ -11,14 +24,15 @@
                 <ul id="chat"></ul>
             </div>
             <div class="game-controls">
-                <button id="rock">Rock</button>
-                <button id="paper">Paper</button>
-                <button id="scissors">Scissors</button>
+                <button id="rock">Rock <i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
+                <button id="paper">Paper 
+                <i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
+                <button id="scissors">Scissors <i class="fa fa-hand-scissors-o" aria-hidden="true"></i></button>
             </div>
             <div class="chat-controls">
                 <form id="chat-form">
                     <input id="chat-input"/>
-                    <button>Send</button>
+                    <button>Send <i class="fa fa-share-square" aria-hidden="true"></i></button>
                 </form>
             </div>
         </div>
