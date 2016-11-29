@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RPS Multiplayer</title>
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="main">
+                <ul id="chat"></ul>
+            </div>
+            <div class="game-controls">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>
+            <div class="chat-controls">
+                <form id="chat-form">
+                    <input id="chat-input"/>
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
+
+                <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+                <script>
+                  // Initialize Firebase
+                  var config = {
+                    apiKey: "AIzaSyCQOiWUCqxf9kcaQRym4RGsFHdA4heGz1E",
+                    authDomain: "rps-multiplayer-b62a8.firebaseapp.com",
+                    databaseURL: "https://rps-multiplayer-b62a8.firebaseio.com",
+                    storageBucket: "",
+                    messagingSenderId: "615843219284"
+                  };
+                  firebase.initializeApp(config);
+                </script>
+        <script src="./assets/javascript/game.js"></script>
+    </body>
+</html>
